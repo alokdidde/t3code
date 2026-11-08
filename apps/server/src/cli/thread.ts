@@ -172,7 +172,7 @@ const toolFailureDetail = (result: typeof ToolResult.Type) => {
   });
 };
 
-const makeThreadTools = (session: McpToolSession, origin: string) => {
+export const makeThreadTools = (session: McpToolSession, origin: string) => {
   const unexpected = (tool: string) =>
     new ThreadToolFailedError({
       tool,
